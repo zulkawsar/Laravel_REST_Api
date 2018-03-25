@@ -1,0 +1,901 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"crea",
+				"created_at"
+			],
+			[
+				"s",
+				"state"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"bt",
+				"btn-primary \tBootstrap 4 Class"
+			],
+			[
+				"Route",
+				"Route::get\tBasic Get Route."
+			],
+			[
+				"re",
+				"removeClass"
+			],
+			[
+				"repl",
+				"reply"
+			],
+			[
+				"d",
+				"d-none \tBootstrap 4 Class"
+			],
+			[
+				"mb",
+				"mb-4 \tBootstrap 4 Class"
+			],
+			[
+				"te",
+				"text-right \tBootstrap 4 Class"
+			],
+			[
+				"form",
+				"form-control \tBootstrap 4 Class"
+			],
+			[
+				"pt-3",
+				"pt-lg-3 \tBootstrap 4 Class"
+			],
+			[
+				"pl-",
+				"pl-3 \tBootstrap 4 Class"
+			],
+			[
+				"mt",
+				"mt-3 \tBootstrap 4 Class"
+			],
+			[
+				"text",
+				"text-justify \tBootstrap 4 Class"
+			],
+			[
+				"p",
+				"p-3 \tBootstrap 4 Class"
+			],
+			[
+				"func",
+				"function"
+			],
+			[
+				"fu",
+				"fun\tFunction"
+			],
+			[
+				"for",
+				"form-control"
+			],
+			[
+				"D",
+				"DB::select\tRun a select statement against the database."
+			],
+			[
+				"pa",
+				"padding-left"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"na",
+				"nav-item"
+			],
+			[
+				"bor",
+				"border-top"
+			],
+			[
+				"navbar",
+				"navbar-nav"
+			],
+			[
+				"conta",
+				"container_class"
+			],
+			[
+				"email_",
+				"email_1"
+			],
+			[
+				"mo",
+				"mobile_1"
+			],
+			[
+				"co",
+				"cover"
+			],
+			[
+				"u",
+				"url()"
+			],
+			[
+				"add",
+				"add_action"
+			],
+			[
+				"th",
+				"thumbnails"
+			],
+			[
+				"ar",
+				"args"
+			],
+			[
+				"css",
+				"cssmenu"
+			],
+			[
+				"bran",
+				"brand"
+			],
+			[
+				"v",
+				"view-data"
+			],
+			[
+				"a",
+				"auto"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"magin",
+				"margin"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"P",
+				"P_Category"
+			],
+			[
+				"catego",
+				"categories"
+			],
+			[
+				"bra",
+				"brands"
+			],
+			[
+				"to",
+				"total_balance"
+			],
+			[
+				"dele",
+				"delete_ex"
+			],
+			[
+				"pay",
+				"pay_salary"
+			],
+			[
+				"all",
+				"all_data"
+			],
+			[
+				"se",
+				"search"
+			],
+			[
+				"this",
+				"thisSearch"
+			],
+			[
+				"Y",
+				"Y-m-d"
+			],
+			[
+				"btn-",
+				"btn-info"
+			],
+			[
+				"ProjectS",
+				"ProjectStocks"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"pan",
+				"panel-body"
+			],
+			[
+				"pu",
+				"public"
+			],
+			[
+				"lo",
+				"log"
+			],
+			[
+				"P_",
+				"P_Product"
+			],
+			[
+				"autoc",
+				"auto-complete"
+			],
+			[
+				"va",
+				"val"
+			],
+			[
+				"file",
+				"fileData"
+			],
+			[
+				"da",
+				"dangerNotify"
+			],
+			[
+				"Re",
+				"Request"
+			],
+			[
+				"cat",
+				"category_id"
+			],
+			[
+				"suc",
+				"successNotify"
+			],
+			[
+				"S",
+				"successNotify"
+			],
+			[
+				"pro",
+				"product_add"
+			],
+			[
+				"countr",
+				"country_id"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"moda",
+				"modal-footer"
+			],
+			[
+				"brand",
+				"brand_id"
+			],
+			[
+				"Form",
+				"formData"
+			],
+			[
+				"al",
+				"alt\tAttr"
+			],
+			[
+				"ret",
+				"retail_price"
+			],
+			[
+				"input",
+				"input-group"
+			],
+			[
+				"fa",
+				"fa-smile-o"
+			],
+			[
+				"cl",
+				"click"
+			],
+			[
+				"pr",
+				"product_name"
+			],
+			[
+				"pre",
+				"pre_qunantity"
+			],
+			[
+				"qu",
+				"quantity"
+			],
+			[
+				"stock",
+				"stock_up"
+			],
+			[
+				"st",
+				"stock_up"
+			],
+			[
+				"category",
+				"category_id"
+			],
+			[
+				"ProjectStocks",
+				"ProjectStocksDetails"
+			],
+			[
+				"t",
+				"tbody\tTag"
+			],
+			[
+				"Proj",
+				"ProjectAdminController"
+			],
+			[
+				"btn",
+				"btn-primary"
+			],
+			[
+				"q",
+				"quantity"
+			],
+			[
+				"cate",
+				"category_id"
+			],
+			[
+				"i",
+				"id_country"
+			],
+			[
+				"ca",
+				"category_id"
+			],
+			[
+				"user",
+				"user_id"
+			],
+			[
+				"bo",
+				"border-top"
+			],
+			[
+				"col-sm",
+				"col-sm-6"
+			],
+			[
+				"cf",
+				"csrf_field"
+			],
+			[
+				"L",
+				"Log::log\tLog a message to the logs."
+			],
+			[
+				"salary",
+				"salary_type"
+			],
+			[
+				"A",
+				"Available"
+			],
+			[
+				"sa",
+				"salary"
+			],
+			[
+				"getS",
+				"getSalaryType"
+			],
+			[
+				"getsalary",
+				"getsalaryType"
+			],
+			[
+				"rol",
+				"Role"
+			],
+			[
+				"role",
+				"roleModel"
+			],
+			[
+				"ac",
+				"action\tAttr"
+			],
+			[
+				"not",
+				"notifications"
+			],
+			[
+				"base_",
+				"base_url"
+			],
+			[
+				"sta",
+				"status"
+			],
+			[
+				"res",
+				"response"
+			],
+			[
+				"Inv",
+				"inventory"
+			],
+			[
+				"fund",
+				"fund_expend"
+			],
+			[
+				"expen",
+				"expend_id"
+			],
+			[
+				"btn-s",
+				"btn-success"
+			],
+			[
+				"em",
+				"employee_balances"
+			],
+			[
+				"Pay",
+				"Payment"
+			],
+			[
+				"wh",
+				"where"
+			],
+			[
+				"time",
+				"timekeeper"
+			],
+			[
+				"fun",
+				"fun\tfunction …"
+			],
+			[
+				"cre",
+				"created_at"
+			],
+			[
+				"md",
+				"md-form"
+			],
+			[
+				"hi",
+				"hide-btn"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"tr",
+				"true"
+			],
+			[
+				"admin",
+				"adminOption"
+			],
+			[
+				"sus",
+				"suspent"
+			],
+			[
+				"els",
+				"else"
+			],
+			[
+				"rou",
+				"route"
+			],
+			[
+				"ser",
+				"services"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "routes/api.php",
+			"settings":
+			{
+				"buffer_size": 1278,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 354.0,
+		"last_filter": "Package Control: i",
+		"selected_items":
+		[
+			[
+				"Package Control: i",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: is",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 766.0
+	},
+	"console":
+	{
+		"height": 146.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/G/Project/restapi",
+		"/G/Project/restapi/app",
+		"/G/Project/restapi/app/Http",
+		"/G/Project/restapi/app/Http/Controllers",
+		"/G/Project/restapi/routes"
+	],
+	"file_history":
+	[
+		"/G/Project/restapi/config/database.php",
+		"/G/Project/restapi/.env",
+		"/G/Project/restapi/Vagrantfile",
+		"/G/Project/restapi/Homestead.yaml",
+		"/G/Project/restapi/app/Providers/RouteServiceProvider.php",
+		"/G/Project/restapi/app/Seller.php",
+		"/G/Project/restapi/config/app.php",
+		"/G/Project/restapi/app/Buyer.php",
+		"/G/Project/blog/vendor/laravel/framework/src/Illuminate/Notifications/Notifiable.php",
+		"/G/Project/blog/vendor/laravel/framework/src/Illuminate/Notifications/HasDatabaseNotifications.php",
+		"/F/hosts",
+		"/C/Users/mdzul/.vagrant.d/boxes/laravel-VAGRANTSLASH-homestead/5.2.0/virtualbox/Vagrantfile",
+		"/G/Project/restApi/Vagrantfile",
+		"/G/Project/restApi/.vagrant/machines/restapi/virtualbox/vagrant_cwd",
+		"/G/Project/restApi/Homestead.yaml",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/G/Project/blog/resources/views/Auth/register.blade.php",
+		"/G/Project/blog/resources/views/Auth/login.blade.php",
+		"/G/Project/blog/app/Http/Requests/loginRequest.php",
+		"/G/Project/blog/resources/views/emails/email_verify.blade.php",
+		"/G/Project/blog/app/Http/Controllers/AuthController.php",
+		"/G/Project/blog/routes/web.php",
+		"/G/Project/blog/app/User.php",
+		"/G/Project/blog/app/Mail/EmailVerify.php",
+		"/G/Project/blog/database/migrations/2014_10_12_000000_create_users_table.php",
+		"/G/Project/blog/app/Jobs/SendVerificationEmail.php",
+		"/G/Project/blog/.env",
+		"/G/Project/blog/config/mail.php",
+		"/G/Project/blog/vendor/swiftmailer/swiftmailer/lib/classes/Swift/SmtpTransport.php",
+		"/G/Project/examinee_two/public/js/app.js",
+		"/G/Project/examinee/app/Transformers/RoleTransformer.php",
+		"/G/Project/blog/app/Http/Controllers/PostController.php",
+		"/G/Project/blog/resources/views/layouts/sidebar.blade.php",
+		"/G/Project/blog/app/Post.php",
+		"/G/Project/blog/app/Providers/AppServiceProvider.php",
+		"/C/Program Files/DbSchema/config/DbSchema.properties",
+		"/G/Project/Pencil_Corporation_laravel/.env",
+		"/G/Project/blog/resources/views/layouts/nav.blade.php",
+		"/G/Project/blog/public/js/app.js",
+		"/G/Project/blog/app/PostComment.php",
+		"/G/Project/blog/app/Reply.php",
+		"/G/Project/examinee/vendor/laravel/framework/src/Illuminate/Auth/SessionGuard.php",
+		"/G/Project/blog/resources/views/posts/show.blade.php",
+		"/G/Project/examinee/vendor/laravel/framework/src/Illuminate/Auth/Events/Logout.php",
+		"/C/Users/mdzul/Desktop/tt.html",
+		"/G/Project/Pencil_Corporation_laravel/app/Http/Controllers/loginController.php",
+		"/G/Project/blog/resources/views/posts/post.blade.php",
+		"/G/Project/blog/app/Http/Controllers/ReplyController.php",
+		"/G/Project/blog/app/Http/Requests/Comments.php",
+		"/G/Project/blog/app/Exceptions/Handler.php",
+		"/G/Project/Pencil_Corporation_laravel/routes/user.php",
+		"/G/Project/blog/vendor/laravel/framework/src/Illuminate/Auth/SessionGuard.php",
+		"/G/Project/blog/vendor/laravel/framework/src/Illuminate/Auth/Events/Logout.php",
+		"/G/Project/blog/resources/views/posts/index.blade.php",
+		"/G/Project/blog/app/Http/Requests/UserRegister.php",
+		"/G/Project/examinee/app/Repositories/UserRepository.php",
+		"/G/Project/examinee/app/Http/Requests/UserRequest.php",
+		"/G/Project/examinee/app/Http/Controllers/Api/ApiController.php",
+		"/G/Project/blog/resources/views/Auth/index.blade.php",
+		"/G/Project/blog/app/Http/Controllers/CommentController.php",
+		"/G/Project/blog/database/migrations/2018_02_18_114635_create_replies_table.php",
+		"/G/Project/blog/database/migrations/2018_02_10_184207_create_posts_table.php",
+		"/G/Project/blog/database/migrations/2018_02_17_194516_create_post_comments_table.php",
+		"/G/Project/blog/app/Model.php",
+		"/G/Project/blog/public/css/app.css",
+		"/G/Project/Pencil_Corporation_laravel/resources/views/main/employeeList.blade.php",
+		"/G/Project/blog/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Concerns/HasRelationships.php",
+		"/G/Project/blog/resources/views/layouts/master.blade.php",
+		"/C/Users/mdzul/Downloads/Thesis_template_GUB.tex",
+		"/G/Project/Pencil_Corporation_laravel/resources/views/main/fund.blade.php",
+		"/G/Project/Pencil_Corporation_laravel/public/resources/js/ProfileUpdate.js",
+		"/G/Project/examinee_two/public/css/app.css",
+		"/G/Project/examinee_two/resources/views/subject/index.blade.php",
+		"/G/Project/examinee/resources/assets/js/admin/App.vue",
+		"/G/Project/blog/resources/views/layouts/footer.blade.php",
+		"/G/Project/examinee_two/app/Http/Controllers/ExamController.php",
+		"/G/Project/blog/resources/views/posts/create.blade.php",
+		"/G/Project/blog/app/Http/Requests/PostRequest.php",
+		"/G/Project/blog/vendor/laravel/framework/src/Illuminate/Contracts/Support/MessageBag.php",
+		"/G/Project/blog/vendor/laravel/framework/src/Illuminate/Support/MessageBag.php",
+		"/G/Project/blog/vendor/laravel/framework/src/Illuminate/Database/Concerns/BuildsQueries.php",
+		"/G/Project/examinee_two/resources/views/exam/create.blade.php",
+		"/G/Project/examinee_two/app/Http/Requests/ExamRequest.php",
+		"/G/Project/blog/resources/views/layout/master.blade.php",
+		"/G/Project/Pencil_Corporation_laravel/resources/views/main/home.blade.php",
+		"/G/Project/Pencil_Corporation_laravel/app/Http/Controllers/Admin.php",
+		"/G/start.sh",
+		"/C/Program Files/Docker Toolbox/start.sh",
+		"/G/Project/blog/resources/views/tasks/index.blade.php",
+		"/G/Project/blog/resources/views/welcome.blade.php",
+		"/F/League of Legends/lockfile",
+		"/G/Project/blog/resources/views/tasks/show.blade.php",
+		"/G/Project/blog/database/migrations/2018_02_07_151330_create_tasks_table.php",
+		"/G/Project/blog/resources/views/task.show.blade.php",
+		"/G/Project/Pencil_Corporation_laravel/app/Providers/AppServiceProvider.php",
+		"/G/Project/examinee_two/app/Exam.php",
+		"/G/Project/examinee_two/resources/views/layouts/app.blade.php",
+		"/G/Project/examinee_two/.env",
+		"/C/Users/mdzul/Downloads/bootstrap-4.0.0/bootstrap-4.0.0/docs/4.0/examples/dashboard/index.html",
+		"/G/Project/examinee_two/resources/views/layouts/footer.blade.php",
+		"/C/Users/mdzul/Downloads/bootstrap-4.0.0/bootstrap-4.0.0/docs/4.0/examples/dashboard/dashboard.css",
+		"/C/Users/mdzul/Downloads/bootstrap-4.0.0/bootstrap-4.0.0/docs/4.0/examples/offcanvas/index.html",
+		"/C/Users/mdzul/Downloads/sidebar/bootstrap-sidebar/style3.css",
+		"/G/Project/backend/resources/views/home.blade.php",
+		"/G/Project/examinee_two/resources/views/layouts/header.blade.php",
+		"/C/Users/mdzul/Downloads/sidebar/bootstrap-sidebar/index3.html",
+		"/G/Project/examinee_two/app/Providers/AppServiceProvider.php",
+		"/G/Project/backend/.env",
+		"/G/Project/Pencil_Corporation_laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php",
+		"/G/Project/examinee/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php",
+		"/G/Project/Pencil_Corporation_laravel/app/Http/Controllers/ProjectAdminController.php",
+		"/C/xampp/php/php.ini",
+		"/C/xampp/phpMyAdmin/config.inc.php",
+		"/G/Project/HostTheBizDv/wp-content/themes/hostthebiz/footer.php",
+		"/G/Project/Pencil_Corporation_laravel/.env.example",
+		"/G/Project/examinee/app/Http/Controllers/Auth/ResetPasswordController.php",
+		"/G/Project/examinee/app/Http/Controllers/Auth/RegisterController.php",
+		"/G/Project/Pencil_Corporation_laravel/resources/views/main/timeKeeperAdd.blade.php",
+		"/G/Project/HostTheBizDv/wp-content/themes/hostthebiz/gallery.php",
+		"/C/xampp/mysql/bin/my.ini",
+		"/G/Project/HostTheBizDv/wp-content/themes/hostthebiz/404.php",
+		"/G/Project/HostTheBizDv/wp-content/themes/hostthebiz/template-parts/organization_chart.php",
+		"/G/Project/HostTheBizDv/wp-content/themes/hostthebiz/template-parts/management_team.php",
+		"/G/Project/HostTheBizDv/wp-content/themes/hostthebiz/page.php",
+		"/G/Project/HostTheBizDv/wp-content/themes/hostthebiz/page-home.php",
+		"/G/Project/HostTheBizDv/wp-content/themes/hostthebiz/style.css",
+		"/G/Project/HostTheBizDv/wp-content/themes/hostthebiz/header.php",
+		"/G/Project/HostTheBizDv/wp-content/themes/hostthebiz/template-parts/contact.php"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 167.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"Category",
+			"Buyer",
+			"c",
+			"s",
+			"Buyer",
+			"buyer",
+			"Buyer",
+			"buyer"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"folders":
+	[
+		{
+			"path": "G:\\Project\\restapi"
+		}
+	],
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "routes/api.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1278,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								842,
+								842
+							]
+						],
+						"settings":
+						{
+							"SL.18.region_keys":
+							[
+								"sublime_linter.protected_regions"
+							],
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 490.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 35.0
+	},
+	"input":
+	{
+		"height": 74.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "",
+	"replace":
+	{
+		"height": 66.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"smtp.php",
+				"blog\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\SmtpTransport.php"
+			],
+			[
+				"/logut",
+				"examinee\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Events\\Logout.php"
+			],
+			[
+				"/logout",
+				"blog\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Events\\Logout.php"
+			],
+			[
+				"app.v",
+				"examinee\\resources\\assets\\js\\admin\\App.vue"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 375.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
