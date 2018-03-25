@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"be",
+				"newBelongsTo〔function〕"
+			],
+			[
+				"th",
+				"$this〔variable〕"
+			],
+			[
+				"belo",
+				"belongsTo〔function〕"
+			],
+			[
+				"belon",
+				"belongsToMany〔function〕"
+			],
+			[
+				"Ad",
+				"ADMIN_USER"
+			],
+			[
 				"crea",
 				"created_at"
 			],
@@ -126,10 +146,6 @@
 			[
 				"add",
 				"add_action"
-			],
-			[
-				"th",
-				"thumbnails"
 			],
 			[
 				"ar",
@@ -498,22 +514,6 @@
 			[
 				"admin",
 				"adminOption"
-			],
-			[
-				"sus",
-				"suspent"
-			],
-			[
-				"els",
-				"else"
-			],
-			[
-				"rou",
-				"route"
-			],
-			[
-				"ser",
-				"services"
 			]
 		]
 	},
@@ -527,6 +527,60 @@
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
+		},
+		{
+			"contents": "<?php\n\nnamespace App;\n\nuse App\\Product;\nuse Illuminate\\Database\\Eloquent\\Model;\n\nclass Category extends Model\n{\n    protected $fillable = [\n    \t'description',\n    \t'name',\n    ];\n\n    public function products()\n    {\n    \treturn $this->belongsToMany(Product::class)\n    }\n\n\n}\n",
+			"file": "app/Category.php",
+			"file_size": 276,
+			"file_write_time": 131664791609701184,
+			"settings":
+			{
+				"buffer_size": 277,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<?php\n\nnamespace App;\nuse App\\Transaction;\n\n\nclass Buyer extends User\n{\n   \tpublic function transactions()\n   \t{\n   \t\treturn $this->hasMany(Transaction::class);\n   \t}\n}\n",
+			"file": "app/Buyer.php",
+			"file_size": 168,
+			"file_write_time": 131664778678694627,
+			"settings":
+			{
+				"buffer_size": 169,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Product.php",
+			"settings":
+			{
+				"buffer_size": 754,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Seller.php",
+			"settings":
+			{
+				"buffer_size": 158,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<?php\n\nnamespace App;\n\nuse Illuminate\\Database\\Eloquent\\Model;\n\nclass Transaction extends Model\n{\n\tprotected $fillable = [\n\t\t'quantity',\n\t\t'seller_id',\n\t\t'product_id',\n\t];\n\n\tpublic function sellers()\n\t{\n\t\treturn $this->belongsTo()\n\t}\n}\n",
+			"file": "app/Transaction.php",
+			"file_size": 177,
+			"file_write_time": 131664806968680314,
+			"settings":
+			{
+				"buffer_size": 236,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "",
@@ -536,7 +590,7 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 354.0,
+		"height": 392.0,
 		"last_filter": "Package Control: i",
 		"selected_items":
 		[
@@ -553,7 +607,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 766.0
+		"width": 883.0
 	},
 	"console":
 	{
@@ -575,12 +629,14 @@
 	[
 		"/G/Project/restapi",
 		"/G/Project/restapi/app",
-		"/G/Project/restapi/app/Http",
-		"/G/Project/restapi/app/Http/Controllers",
 		"/G/Project/restapi/routes"
 	],
 	"file_history":
 	[
+		"/G/Project/restapi/app/User.php",
+		"/G/Project/restapi/app/Transaction.php",
+		"/C/Users/mdzul/AppData/Roaming/Sublime Text 3/Packages/User/PHP Companion.sublime-settings",
+		"/C/Users/mdzul/AppData/Roaming/Sublime Text 3/Packages/PHP Companion/PHP Companion.sublime-settings",
 		"/G/Project/restapi/config/database.php",
 		"/G/Project/restapi/.env",
 		"/G/Project/restapi/Vagrantfile",
@@ -704,15 +760,11 @@
 		"/G/Project/HostTheBizDv/wp-content/themes/hostthebiz/404.php",
 		"/G/Project/HostTheBizDv/wp-content/themes/hostthebiz/template-parts/organization_chart.php",
 		"/G/Project/HostTheBizDv/wp-content/themes/hostthebiz/template-parts/management_team.php",
-		"/G/Project/HostTheBizDv/wp-content/themes/hostthebiz/page.php",
-		"/G/Project/HostTheBizDv/wp-content/themes/hostthebiz/page-home.php",
-		"/G/Project/HostTheBizDv/wp-content/themes/hostthebiz/style.css",
-		"/G/Project/HostTheBizDv/wp-content/themes/hostthebiz/header.php",
-		"/G/Project/HostTheBizDv/wp-content/themes/hostthebiz/template-parts/contact.php"
+		"/G/Project/HostTheBizDv/wp-content/themes/hostthebiz/page.php"
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 36.0
 	},
 	"find_in_files":
 	{
@@ -757,7 +809,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 5,
 			"sheets":
 			[
 				{
@@ -779,6 +831,9 @@
 						],
 						"settings":
 						{
+							"SL.14.region_keys":
+							[
+							],
 							"SL.18.region_keys":
 							[
 								"sublime_linter.protected_regions"
@@ -787,7 +842,179 @@
 							"syntax": "Packages/PHP/PHP.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 490.0,
+						"translation.y": 658.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/Category.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 277,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								209,
+								209
+							]
+						],
+						"settings":
+						{
+							"SL.15.region_keys":
+							[
+								"sublime_linter.protected_regions",
+								"SL.php.Highlights.|region.redish markup.deleted.sublime_linter markup.error.sublime_linter|32",
+								"SL.php.Gutter.region.redish markup.deleted.sublime_linter markup.error.sublime_linter.dot"
+							],
+							"SL.16.region_keys":
+							[
+							],
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/Buyer.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 169,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								69,
+								69
+							]
+						],
+						"settings":
+						{
+							"SL.29.region_keys":
+							[
+								"sublime_linter.protected_regions"
+							],
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 85.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/Product.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 754,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								230,
+								230
+							]
+						],
+						"settings":
+						{
+							"SL.31.region_keys":
+							[
+								"sublime_linter.protected_regions"
+							],
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 56.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/Seller.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 158,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								105,
+								105
+							]
+						],
+						"settings":
+						{
+							"SL.38.region_keys":
+							[
+								"sublime_linter.protected_regions"
+							],
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/Transaction.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 236,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								228,
+								228
+							]
+						],
+						"settings":
+						{
+							"SL.61.region_keys":
+							[
+								"sublime_linter.protected_regions",
+								"SL.php.Highlights.|region.redish markup.deleted.sublime_linter markup.error.sublime_linter|32",
+								"SL.php.Gutter.region.redish markup.deleted.sublime_linter markup.error.sublime_linter.dot"
+							],
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -798,7 +1025,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 35.0
+		"height": 36.0
 	},
 	"input":
 	{
@@ -831,6 +1058,10 @@
 	{
 		"height": 0.0
 	},
+	"output.SublimeLinter Messages":
+	{
+		"height": 192.0
+	},
 	"output.find_results":
 	{
 		"height": 0.0
@@ -839,7 +1070,7 @@
 	"project": "",
 	"replace":
 	{
-		"height": 66.0
+		"height": 68.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -893,7 +1124,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 375.0,
+	"side_bar_width": 252.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
