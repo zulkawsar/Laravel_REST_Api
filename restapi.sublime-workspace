@@ -536,7 +536,6 @@
 			"settings":
 			{
 				"buffer_size": 277,
-				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
@@ -548,7 +547,6 @@
 			"settings":
 			{
 				"buffer_size": 169,
-				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
@@ -556,13 +554,16 @@
 			"file": "app/Product.php",
 			"settings":
 			{
-				"buffer_size": 754,
+				"buffer_size": 752,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
+			"contents": "<?php\n\nnamespace App;\n\nuse App\\Product;\n\nclass Seller extends User\n{\n    public function products()\n    {\n    \treturn $this->hasMany(Product::class);\n    }\n}\n",
 			"file": "app/Seller.php",
+			"file_size": 157,
+			"file_write_time": 131664809837984367,
 			"settings":
 			{
 				"buffer_size": 158,
@@ -571,13 +572,10 @@
 			}
 		},
 		{
-			"contents": "<?php\n\nnamespace App;\n\nuse Illuminate\\Database\\Eloquent\\Model;\n\nclass Transaction extends Model\n{\n\tprotected $fillable = [\n\t\t'quantity',\n\t\t'seller_id',\n\t\t'product_id',\n\t];\n\n\tpublic function sellers()\n\t{\n\t\treturn $this->belongsTo()\n\t}\n}\n",
 			"file": "app/Transaction.php",
-			"file_size": 177,
-			"file_write_time": 131664806968680314,
 			"settings":
 			{
-				"buffer_size": 236,
+				"buffer_size": 355,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -809,7 +807,7 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -870,8 +868,8 @@
 							"SL.15.region_keys":
 							[
 								"sublime_linter.protected_regions",
-								"SL.php.Highlights.|region.redish markup.deleted.sublime_linter markup.error.sublime_linter|32",
-								"SL.php.Gutter.region.redish markup.deleted.sublime_linter markup.error.sublime_linter.dot"
+								"SL.php.Gutter.region.redish markup.deleted.sublime_linter markup.error.sublime_linter.dot",
+								"SL.php.Highlights.|region.redish markup.deleted.sublime_linter markup.error.sublime_linter|32"
 							],
 							"SL.16.region_keys":
 							[
@@ -905,6 +903,9 @@
 						],
 						"settings":
 						{
+							"SL.16.region_keys":
+							[
+							],
 							"SL.29.region_keys":
 							[
 								"sublime_linter.protected_regions"
@@ -913,7 +914,7 @@
 							"syntax": "Packages/PHP/PHP.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 85.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 4,
@@ -925,19 +926,22 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 754,
+						"buffer_size": 752,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								230,
-								230
+								652,
+								652
 							]
 						],
 						"settings":
 						{
+							"SL.17.region_keys":
+							[
+							],
 							"SL.31.region_keys":
 							[
 								"sublime_linter.protected_regions"
@@ -946,10 +950,10 @@
 							"syntax": "Packages/PHP/PHP.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 56.0,
+						"translation.y": 840.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -965,12 +969,15 @@
 						"selection":
 						[
 							[
-								105,
-								105
+								97,
+								97
 							]
 						],
 						"settings":
 						{
+							"SL.18.region_keys":
+							[
+							],
 							"SL.38.region_keys":
 							[
 								"sublime_linter.protected_regions"
@@ -991,19 +998,23 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 236,
+						"buffer_size": 355,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								228,
-								228
+								355,
+								355
 							]
 						],
 						"settings":
 						{
+							"SL.19.region_keys":
+							[
+								"sublime_linter.protected_regions"
+							],
 							"SL.61.region_keys":
 							[
 								"sublime_linter.protected_regions",
@@ -1014,10 +1025,10 @@
 							"syntax": "Packages/PHP/PHP.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 280.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
