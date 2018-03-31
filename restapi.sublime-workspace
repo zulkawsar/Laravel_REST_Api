@@ -4,6 +4,46 @@
 		"selected_items":
 		[
 			[
+				"js",
+				"json"
+			],
+			[
+				"code",
+				"code"
+			],
+			[
+				"p",
+				"protected"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"U",
+				"User"
+			],
+			[
+				"use",
+				"$userQuantiry〔variable〕"
+			],
+			[
+				"random",
+				"randomElement〔function〕"
+			],
+			[
+				"ran",
+				"randomElement〔function〕"
+			],
+			[
+				"RAN",
+				"randomElement〔function〕"
+			],
+			[
+				"FA",
+				"Faker"
+			],
+			[
 				"be",
 				"newBelongsTo〔function〕"
 			],
@@ -82,10 +122,6 @@
 			[
 				"text",
 				"text-justify \tBootstrap 4 Class"
-			],
-			[
-				"p",
-				"p-3 \tBootstrap 4 Class"
 			],
 			[
 				"func",
@@ -478,106 +514,18 @@
 			[
 				"wh",
 				"where"
-			],
-			[
-				"time",
-				"timekeeper"
-			],
-			[
-				"fun",
-				"fun\tfunction …"
-			],
-			[
-				"cre",
-				"created_at"
-			],
-			[
-				"md",
-				"md-form"
-			],
-			[
-				"hi",
-				"hide-btn"
-			],
-			[
-				"di",
-				"display"
-			],
-			[
-				"margin",
-				"margin-top"
-			],
-			[
-				"tr",
-				"true"
-			],
-			[
-				"admin",
-				"adminOption"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "routes/api.php",
+			"file": "app/Traits/ApiResponser.php",
 			"settings":
 			{
-				"buffer_size": 1278,
+				"buffer_size": 611,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "<?php\n\nnamespace App;\n\nuse App\\Product;\nuse Illuminate\\Database\\Eloquent\\Model;\n\nclass Category extends Model\n{\n    protected $fillable = [\n    \t'description',\n    \t'name',\n    ];\n\n    public function products()\n    {\n    \treturn $this->belongsToMany(Product::class)\n    }\n\n\n}\n",
-			"file": "app/Category.php",
-			"file_size": 276,
-			"file_write_time": 131664791609701184,
-			"settings":
-			{
-				"buffer_size": 277,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "<?php\n\nnamespace App;\nuse App\\Transaction;\n\n\nclass Buyer extends User\n{\n   \tpublic function transactions()\n   \t{\n   \t\treturn $this->hasMany(Transaction::class);\n   \t}\n}\n",
-			"file": "app/Buyer.php",
-			"file_size": 168,
-			"file_write_time": 131664778678694627,
-			"settings":
-			{
-				"buffer_size": 169,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/Product.php",
-			"settings":
-			{
-				"buffer_size": 752,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "<?php\n\nnamespace App;\n\nuse App\\Product;\n\nclass Seller extends User\n{\n    public function products()\n    {\n    \treturn $this->hasMany(Product::class);\n    }\n}\n",
-			"file": "app/Seller.php",
-			"file_size": 157,
-			"file_write_time": 131664809837984367,
-			"settings":
-			{
-				"buffer_size": 158,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/Transaction.php",
-			"settings":
-			{
-				"buffer_size": 355,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -627,22 +575,46 @@
 	[
 		"/G/Project/restapi",
 		"/G/Project/restapi/app",
+		"/G/Project/restapi/app/Traits",
+		"/G/Project/restapi/database",
+		"/G/Project/restapi/database/factories",
 		"/G/Project/restapi/routes"
 	],
 	"file_history":
 	[
+		"/G/Project/restapi/app/Http/Controllers/User/UserController.php",
+		"/G/Project/examinee/app/Transformers/RoleTransformer.php",
+		"/G/Project/restapi/vendor/phar-io/version/src/PreReleaseSuffix.php",
+		"/G/Project/restapi/.env",
 		"/G/Project/restapi/app/User.php",
+		"/G/Project/examinee/app/Repositories/BaseRepository.php",
+		"/G/Project/examinee/app/Repositories/UserRepository.php",
+		"/G/Project/restapi/app/Providers/AppServiceProvider.php",
+		"/G/Project/blog/app/Reply.php",
+		"/G/Project/blog/app/Http/Controllers/ReplyController.php",
+		"/G/Project/blog/app/User.php",
+		"/G/Project/blog/app/Post.php",
+		"/G/Project/restapi/database/factories/UserFactory.php",
+		"/G/Project/restapi/database/seeds/DatabaseSeeder.php",
+		"/G/Project/restapi/routes/api.php",
+		"/G/Project/restapi/app/Category.php",
+		"/G/Project/restapi/database/migrations/2018_03_22_130535_create_products_table.php",
+		"/G/Project/restapi/app/Seller.php",
+		"/G/Project/restapi/vendor/fzaninotto/faker/src/Faker/Provider/Base.php",
+		"/G/Project/restapi/database/migrations/2018_03_26_125349_category_product_table.php",
+		"/G/Project/restapi/database/migrations/2018_03_22_130850_create_transactions_table.php",
+		"/G/Project/restapi/database/migrations/2018_03_22_130152_create_categories_table.php",
+		"/G/Project/restapi/database/migrations/2014_10_12_000000_create_users_table.php",
+		"/G/Project/restapi/app/Buyer.php",
 		"/G/Project/restapi/app/Transaction.php",
+		"/G/Project/restapi/app/Product.php",
 		"/C/Users/mdzul/AppData/Roaming/Sublime Text 3/Packages/User/PHP Companion.sublime-settings",
 		"/C/Users/mdzul/AppData/Roaming/Sublime Text 3/Packages/PHP Companion/PHP Companion.sublime-settings",
 		"/G/Project/restapi/config/database.php",
-		"/G/Project/restapi/.env",
 		"/G/Project/restapi/Vagrantfile",
 		"/G/Project/restapi/Homestead.yaml",
 		"/G/Project/restapi/app/Providers/RouteServiceProvider.php",
-		"/G/Project/restapi/app/Seller.php",
 		"/G/Project/restapi/config/app.php",
-		"/G/Project/restapi/app/Buyer.php",
 		"/G/Project/blog/vendor/laravel/framework/src/Illuminate/Notifications/Notifiable.php",
 		"/G/Project/blog/vendor/laravel/framework/src/Illuminate/Notifications/HasDatabaseNotifications.php",
 		"/F/hosts",
@@ -657,7 +629,6 @@
 		"/G/Project/blog/resources/views/emails/email_verify.blade.php",
 		"/G/Project/blog/app/Http/Controllers/AuthController.php",
 		"/G/Project/blog/routes/web.php",
-		"/G/Project/blog/app/User.php",
 		"/G/Project/blog/app/Mail/EmailVerify.php",
 		"/G/Project/blog/database/migrations/2014_10_12_000000_create_users_table.php",
 		"/G/Project/blog/app/Jobs/SendVerificationEmail.php",
@@ -665,24 +636,20 @@
 		"/G/Project/blog/config/mail.php",
 		"/G/Project/blog/vendor/swiftmailer/swiftmailer/lib/classes/Swift/SmtpTransport.php",
 		"/G/Project/examinee_two/public/js/app.js",
-		"/G/Project/examinee/app/Transformers/RoleTransformer.php",
 		"/G/Project/blog/app/Http/Controllers/PostController.php",
 		"/G/Project/blog/resources/views/layouts/sidebar.blade.php",
-		"/G/Project/blog/app/Post.php",
 		"/G/Project/blog/app/Providers/AppServiceProvider.php",
 		"/C/Program Files/DbSchema/config/DbSchema.properties",
 		"/G/Project/Pencil_Corporation_laravel/.env",
 		"/G/Project/blog/resources/views/layouts/nav.blade.php",
 		"/G/Project/blog/public/js/app.js",
 		"/G/Project/blog/app/PostComment.php",
-		"/G/Project/blog/app/Reply.php",
 		"/G/Project/examinee/vendor/laravel/framework/src/Illuminate/Auth/SessionGuard.php",
 		"/G/Project/blog/resources/views/posts/show.blade.php",
 		"/G/Project/examinee/vendor/laravel/framework/src/Illuminate/Auth/Events/Logout.php",
 		"/C/Users/mdzul/Desktop/tt.html",
 		"/G/Project/Pencil_Corporation_laravel/app/Http/Controllers/loginController.php",
 		"/G/Project/blog/resources/views/posts/post.blade.php",
-		"/G/Project/blog/app/Http/Controllers/ReplyController.php",
 		"/G/Project/blog/app/Http/Requests/Comments.php",
 		"/G/Project/blog/app/Exceptions/Handler.php",
 		"/G/Project/Pencil_Corporation_laravel/routes/user.php",
@@ -690,7 +657,6 @@
 		"/G/Project/blog/vendor/laravel/framework/src/Illuminate/Auth/Events/Logout.php",
 		"/G/Project/blog/resources/views/posts/index.blade.php",
 		"/G/Project/blog/app/Http/Requests/UserRegister.php",
-		"/G/Project/examinee/app/Repositories/UserRepository.php",
 		"/G/Project/examinee/app/Http/Requests/UserRequest.php",
 		"/G/Project/examinee/app/Http/Controllers/Api/ApiController.php",
 		"/G/Project/blog/resources/views/Auth/index.blade.php",
@@ -743,22 +709,7 @@
 		"/C/Users/mdzul/Downloads/sidebar/bootstrap-sidebar/index3.html",
 		"/G/Project/examinee_two/app/Providers/AppServiceProvider.php",
 		"/G/Project/backend/.env",
-		"/G/Project/Pencil_Corporation_laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php",
-		"/G/Project/examinee/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php",
-		"/G/Project/Pencil_Corporation_laravel/app/Http/Controllers/ProjectAdminController.php",
-		"/C/xampp/php/php.ini",
-		"/C/xampp/phpMyAdmin/config.inc.php",
-		"/G/Project/HostTheBizDv/wp-content/themes/hostthebiz/footer.php",
-		"/G/Project/Pencil_Corporation_laravel/.env.example",
-		"/G/Project/examinee/app/Http/Controllers/Auth/ResetPasswordController.php",
-		"/G/Project/examinee/app/Http/Controllers/Auth/RegisterController.php",
-		"/G/Project/Pencil_Corporation_laravel/resources/views/main/timeKeeperAdd.blade.php",
-		"/G/Project/HostTheBizDv/wp-content/themes/hostthebiz/gallery.php",
-		"/C/xampp/mysql/bin/my.ini",
-		"/G/Project/HostTheBizDv/wp-content/themes/hostthebiz/404.php",
-		"/G/Project/HostTheBizDv/wp-content/themes/hostthebiz/template-parts/organization_chart.php",
-		"/G/Project/HostTheBizDv/wp-content/themes/hostthebiz/template-parts/management_team.php",
-		"/G/Project/HostTheBizDv/wp-content/themes/hostthebiz/page.php"
+		"/G/Project/Pencil_Corporation_laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php"
 	],
 	"find":
 	{
@@ -776,6 +727,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"request",
+			"turncate",
+			";\n",
 			"Category",
 			"Buyer",
 			"c",
@@ -802,233 +756,54 @@
 	[
 		{
 			"path": "G:\\Project\\restapi"
+		},
+		{
+			"path": "G:\\Project\\examinee_two"
+		},
+		{
+			"path": "G:\\Project\\blog"
+		},
+		{
+			"path": "G:\\Project\\examinee"
 		}
 	],
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "routes/api.php",
+					"file": "app/Traits/ApiResponser.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1278,
+						"buffer_size": 611,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								842,
-								842
-							]
-						],
-						"settings":
-						{
-							"SL.14.region_keys":
-							[
-							],
-							"SL.18.region_keys":
-							[
-								"sublime_linter.protected_regions"
-							],
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 658.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/Category.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 277,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								209,
-								209
-							]
-						],
-						"settings":
-						{
-							"SL.15.region_keys":
-							[
-								"sublime_linter.protected_regions",
-								"SL.php.Gutter.region.redish markup.deleted.sublime_linter markup.error.sublime_linter.dot",
-								"SL.php.Highlights.|region.redish markup.deleted.sublime_linter markup.error.sublime_linter|32"
-							],
-							"SL.16.region_keys":
-							[
-							],
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/Buyer.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 169,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								69,
-								69
-							]
-						],
-						"settings":
-						{
-							"SL.16.region_keys":
-							[
-							],
-							"SL.29.region_keys":
-							[
-								"sublime_linter.protected_regions"
-							],
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "app/Product.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 752,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								652,
-								652
+								494,
+								494
 							]
 						],
 						"settings":
 						{
 							"SL.17.region_keys":
 							[
-							],
-							"SL.31.region_keys":
-							[
 								"sublime_linter.protected_regions"
 							],
 							"auto_complete": false,
 							"syntax": "Packages/PHP/PHP.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 840.0,
+						"translation.y": 155.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "app/Seller.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 158,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								97,
-								97
-							]
-						],
-						"settings":
-						{
-							"SL.18.region_keys":
-							[
-							],
-							"SL.38.region_keys":
-							[
-								"sublime_linter.protected_regions"
-							],
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "app/Transaction.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 355,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								355,
-								355
-							]
-						],
-						"settings":
-						{
-							"SL.19.region_keys":
-							[
-								"sublime_linter.protected_regions"
-							],
-							"SL.61.region_keys":
-							[
-								"sublime_linter.protected_regions",
-								"SL.php.Highlights.|region.redish markup.deleted.sublime_linter markup.error.sublime_linter|32",
-								"SL.php.Gutter.region.redish markup.deleted.sublime_linter markup.error.sublime_linter.dot"
-							],
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 280.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -1040,7 +815,7 @@
 	},
 	"input":
 	{
-		"height": 74.0
+		"height": 48.0
 	},
 	"layout":
 	{
@@ -1135,7 +910,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 252.0,
+	"side_bar_width": 404.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

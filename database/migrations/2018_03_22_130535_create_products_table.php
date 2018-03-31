@@ -20,7 +20,7 @@ class CreateProductsTable extends Migration
             $table->string('name');
             $table->string('description');
             $table->integer('quantity')->unsigned();
-            $table->string('status')->default(Product::UNAVAILABLE);
+            $table->string('status')->default(Product::UNAVAILABLE_PRODUCT);
             $table->string('image');
             $table->timestamps();
 
