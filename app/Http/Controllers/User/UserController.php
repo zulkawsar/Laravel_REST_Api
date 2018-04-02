@@ -3,10 +3,11 @@
 namespace App\Http\Controllers\User;
 
 use App\User;
+use App\Traits\showAll;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
+use App\Http\Controllers\ApiController;
 
-class UserController extends Controller
+class UserController extends ApiController
 {
     /**
      * Display a listing of the resource.
@@ -16,7 +17,7 @@ class UserController extends Controller
     public function index()
     {
         $users = User::all();
-        return response()->json([ 'data' => $users ], 200);
+        return $this->showAll( $users);
     }
 
     /**
@@ -37,8 +38,15 @@ class UserController extends Controller
      */
     public function store(Request $request, User $user)
     {
-        $user = User::create($request->all() );
-        return response()->json([ 'data' => $user ], 201);
+        $roles = [
+            'name' => 'required',
+            // 'email' => 'required | email',
+        ];
+
+        $this->validate($request, $roles);
+
+        $user = User::create($request->all());
+        return response()->json(['data' => $user], 201);
     }
 
     /**
@@ -47,10 +55,9 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(User $user)
     {
-        $user = User::findOrFail($id);
-        return response()->json([ 'data' => $user ], 200);
+        return $this->showOne( $user );
     }
 
     /**
@@ -73,7 +80,39 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $user = User::findOrFail($id);
+
+        $rules = [
+            'email' => 'required | unique:users,email ,'. $user->id,
+            'password' => 'required | min:6',
+            'admin' => 'in:,'. User::ADMIN_USER .','.User::REGULAR_USER,
+
+        ];
+
+
+        if($request->has('name')){
+            $user->name = $request->name;
+        }
+        if ($request->has('email') && $user->email != $request->email ) {
+            $user->verified = User::UNVERIFIED_USER;
+            $user->verified_tocken = User::generatedVerificationCode;
+            $user->email = $request->email;
+        }
+        if ($request->has('password')) {
+            $user->password = bcrypt($request->password);
+        }
+        if ($request->has('admin')) {
+            if (!$user->isVerified()) {
+                return $this->errorResponser('Only verified user can change admin', 409);
+            }
+            $user->admin = $request->admin;
+        }
+
+        if (!$user->isDirty()) {
+            return $this->errorResponser('You do not make any change', 422);
+        }
+        $user->save();
+        return $this->showOne($user);
     }
 
     /**
@@ -84,6 +123,7 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $user = User::findOrFail($id)->delete();
+        return $this->successMessages("Deleted Successfully");
     }
 }

@@ -4,6 +4,42 @@
 		"selected_items":
 		[
 			[
+				"m",
+				"message"
+			],
+			[
+				"sho",
+				"showOne"
+			],
+			[
+				"u",
+				"update"
+			],
+			[
+				"requ",
+				"required"
+			],
+			[
+				"e",
+				"errorResponser〔function〕"
+			],
+			[
+				"U",
+				"User"
+			],
+			[
+				"re",
+				"request"
+			],
+			[
+				"sh",
+				"showOne"
+			],
+			[
+				"show",
+				"showOne〔function〕"
+			],
+			[
 				"js",
 				"json"
 			],
@@ -18,10 +54,6 @@
 			[
 				"fun",
 				"function"
-			],
-			[
-				"U",
-				"User"
 			],
 			[
 				"use",
@@ -82,10 +114,6 @@
 			[
 				"Route",
 				"Route::get\tBasic Get Route."
-			],
-			[
-				"re",
-				"removeClass"
 			],
 			[
 				"repl",
@@ -174,10 +202,6 @@
 			[
 				"co",
 				"cover"
-			],
-			[
-				"u",
-				"url()"
 			],
 			[
 				"add",
@@ -490,30 +514,6 @@
 			[
 				"Inv",
 				"inventory"
-			],
-			[
-				"fund",
-				"fund_expend"
-			],
-			[
-				"expen",
-				"expend_id"
-			],
-			[
-				"btn-s",
-				"btn-success"
-			],
-			[
-				"em",
-				"employee_balances"
-			],
-			[
-				"Pay",
-				"Payment"
-			],
-			[
-				"wh",
-				"where"
 			]
 		]
 	},
@@ -523,9 +523,35 @@
 			"file": "app/Traits/ApiResponser.php",
 			"settings":
 			{
-				"buffer_size": 611,
+				"buffer_size": 777,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/Http/Controllers/User/UserController.php",
+			"settings":
+			{
+				"buffer_size": 2892,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/User.php",
+			"settings":
+			{
+				"buffer_size": 1085,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Http/Controllers/ApiController.php",
+			"settings":
+			{
+				"buffer_size": 164,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -727,6 +753,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Controller",
 			"request",
 			"turncate",
 			";\n",
@@ -779,15 +806,120 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 611,
+						"buffer_size": 777,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								494,
-								494
+								619,
+								619
+							]
+						],
+						"settings":
+						{
+							"SL.14.region_keys":
+							[
+								"sublime_linter.protected_regions"
+							],
+							"SL.17.region_keys":
+							[
+								"sublime_linter.protected_regions"
+							],
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 12.0,
+						"translation.y": 560.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/Http/Controllers/User/UserController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2892,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2685,
+								2685
+							]
+						],
+						"settings":
+						{
+							"SL.16.region_keys":
+							[
+								"sublime_linter.protected_regions"
+							],
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2563.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/User.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1085,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								811,
+								811
+							]
+						],
+						"settings":
+						{
+							"SL.19.region_keys":
+							[
+							],
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 203.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/Http/Controllers/ApiController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 164,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5,
+								5
 							]
 						],
 						"settings":
@@ -800,10 +932,10 @@
 							"syntax": "Packages/PHP/PHP.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 155.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
