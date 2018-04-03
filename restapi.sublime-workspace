@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"class_",
+				"class_basename〔function〕"
+			],
+			[
+				"ex",
+				"$exception〔variable〕"
+			],
+			[
+				"re",
+				"required"
+			],
+			[
+				"err",
+				"$errors〔variable〕"
+			],
+			[
 				"m",
 				"message"
 			],
@@ -26,10 +42,6 @@
 			[
 				"U",
 				"User"
-			],
-			[
-				"re",
-				"request"
 			],
 			[
 				"sh",
@@ -502,54 +514,36 @@
 			[
 				"base_",
 				"base_url"
-			],
-			[
-				"sta",
-				"status"
-			],
-			[
-				"res",
-				"response"
-			],
-			[
-				"Inv",
-				"inventory"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "app/Traits/ApiResponser.php",
+			"file": "app/Http/Controllers/Buyer/BuyerController.php",
 			"settings":
 			{
-				"buffer_size": 777,
+				"buffer_size": 1671,
 				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<?php \nnamespace App\\Traits;\n\nuse Illuminate\\Support\\Collection;\nuse Illuminate\\Database\\Eloquent\\Model;\n\ntrait ApiResponser\n{\n\tprivate function SuccessResponser( $data, $code )\n\t{\n\t\treturn response()->json( $data, $code );\n\t}\n\n\tprotected function errorResponser( $message, $code )\n\t{\n\t\treturn response()->json([ 'error' => $message, 'code' => $code ], $code);\n\t}\n\n\tprotected function showAll( Collection $collection, $code = 200 )\n\t{\n\t\treturn $this->SuccessResponser([ 'data' => $collection ], $code);\n\t}\n\n\tprotected function showOne( Model $model, $code = 200 )\n\t{\n\t\treturn $this->SuccessResponser([ 'data' => $model ], $code);\n\t}\n\n\tprotected function successMessages( $message, $code  )\n\t{\n\t\treturn response()->json([ 'success' => $message, 'code' => $code ], $code);\n\t}\n\n}",
+			"file": "app/Traits/ApiResponser.php",
+			"file_size": 810,
+			"file_write_time": 131669925154532989,
+			"settings":
+			{
+				"buffer_size": 776,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/Http/Controllers/User/UserController.php",
+			"file": "routes/api.php",
 			"settings":
 			{
-				"buffer_size": 2892,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/User.php",
-			"settings":
-			{
-				"buffer_size": 1085,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/Http/Controllers/ApiController.php",
-			"settings":
-			{
-				"buffer_size": 164,
+				"buffer_size": 1280,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -601,18 +595,38 @@
 	[
 		"/G/Project/restapi",
 		"/G/Project/restapi/app",
+		"/G/Project/restapi/app/Http",
+		"/G/Project/restapi/app/Http/Controllers",
+		"/G/Project/restapi/app/Http/Controllers/Buyer",
 		"/G/Project/restapi/app/Traits",
-		"/G/Project/restapi/database",
-		"/G/Project/restapi/database/factories",
 		"/G/Project/restapi/routes"
 	],
 	"file_history":
 	[
+		"/G/Project/restapi/app/Traits/ApiResponser.php",
 		"/G/Project/restapi/app/Http/Controllers/User/UserController.php",
+		"/G/Project/restapi/app/Exceptions/Handler.php",
+		"/G/Project/examinee/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php",
+		"/G/Project/blog/vendor/symfony/http-kernel/Exception/AccessDeniedHttpException.php",
+		"/G/Project/examinee_two/vendor/laravel/framework/src/Illuminate/Auth/Access/AuthorizationException.php",
+		"/G/Project/restapi/vendor/laravel/framework/src/Illuminate/Validation/ValidationException.php",
+		"/G/Project/restapi/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php",
+		"/G/Project/examinee_two/vendor/symfony/http-foundation/Response.php",
+		"/G/Project/examinee_two/vendor/laravel/framework/src/Illuminate/Validation/ValidationException.php",
+		"/G/Project/blog/app/Exceptions/Handler.php",
+		"/G/Project/blog/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php",
+		"/G/Project/restapi/vendor/mockery/mockery/library/Mockery/CountValidator/Exception.php",
+		"/G/Project/restapi/vendor/mockery/mockery/library/Mockery/Exception.php",
+		"/G/Project/restapi/vendor/phar-io/version/src/Exception.php",
+		"/G/Project/restapi/vendor/phpspec/prophecy/src/Prophecy/Exception/Exception.php",
+		"/G/Project/restapi/vendor/phpunit/php-code-coverage/src/Exception/Exception.php",
+		"/G/Project/restapi/vendor/league/flysystem/src/Exception.php",
+		"/G/Project/restapi/vendor/laravel/framework/src/Illuminate/Contracts/Debug/ExceptionHandler.php",
+		"/G/Project/restapi/app/Http/Controllers/ApiController.php",
+		"/G/Project/restapi/app/User.php",
 		"/G/Project/examinee/app/Transformers/RoleTransformer.php",
 		"/G/Project/restapi/vendor/phar-io/version/src/PreReleaseSuffix.php",
 		"/G/Project/restapi/.env",
-		"/G/Project/restapi/app/User.php",
 		"/G/Project/examinee/app/Repositories/BaseRepository.php",
 		"/G/Project/examinee/app/Repositories/UserRepository.php",
 		"/G/Project/restapi/app/Providers/AppServiceProvider.php",
@@ -677,7 +691,6 @@
 		"/G/Project/Pencil_Corporation_laravel/app/Http/Controllers/loginController.php",
 		"/G/Project/blog/resources/views/posts/post.blade.php",
 		"/G/Project/blog/app/Http/Requests/Comments.php",
-		"/G/Project/blog/app/Exceptions/Handler.php",
 		"/G/Project/Pencil_Corporation_laravel/routes/user.php",
 		"/G/Project/blog/vendor/laravel/framework/src/Illuminate/Auth/SessionGuard.php",
 		"/G/Project/blog/vendor/laravel/framework/src/Illuminate/Auth/Events/Logout.php",
@@ -717,29 +730,11 @@
 		"/C/Program Files/Docker Toolbox/start.sh",
 		"/G/Project/blog/resources/views/tasks/index.blade.php",
 		"/G/Project/blog/resources/views/welcome.blade.php",
-		"/F/League of Legends/lockfile",
-		"/G/Project/blog/resources/views/tasks/show.blade.php",
-		"/G/Project/blog/database/migrations/2018_02_07_151330_create_tasks_table.php",
-		"/G/Project/blog/resources/views/task.show.blade.php",
-		"/G/Project/Pencil_Corporation_laravel/app/Providers/AppServiceProvider.php",
-		"/G/Project/examinee_two/app/Exam.php",
-		"/G/Project/examinee_two/resources/views/layouts/app.blade.php",
-		"/G/Project/examinee_two/.env",
-		"/C/Users/mdzul/Downloads/bootstrap-4.0.0/bootstrap-4.0.0/docs/4.0/examples/dashboard/index.html",
-		"/G/Project/examinee_two/resources/views/layouts/footer.blade.php",
-		"/C/Users/mdzul/Downloads/bootstrap-4.0.0/bootstrap-4.0.0/docs/4.0/examples/dashboard/dashboard.css",
-		"/C/Users/mdzul/Downloads/bootstrap-4.0.0/bootstrap-4.0.0/docs/4.0/examples/offcanvas/index.html",
-		"/C/Users/mdzul/Downloads/sidebar/bootstrap-sidebar/style3.css",
-		"/G/Project/backend/resources/views/home.blade.php",
-		"/G/Project/examinee_two/resources/views/layouts/header.blade.php",
-		"/C/Users/mdzul/Downloads/sidebar/bootstrap-sidebar/index3.html",
-		"/G/Project/examinee_two/app/Providers/AppServiceProvider.php",
-		"/G/Project/backend/.env",
-		"/G/Project/Pencil_Corporation_laravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php"
+		"/F/League of Legends/lockfile"
 	],
 	"find":
 	{
-		"height": 36.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
@@ -753,6 +748,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"422",
 			"Controller",
 			"request",
 			"turncate",
@@ -785,13 +781,7 @@
 			"path": "G:\\Project\\restapi"
 		},
 		{
-			"path": "G:\\Project\\examinee_two"
-		},
-		{
 			"path": "G:\\Project\\blog"
-		},
-		{
-			"path": "G:\\Project\\examinee"
 		}
 	],
 	"groups":
@@ -802,36 +792,34 @@
 			[
 				{
 					"buffer": 0,
-					"file": "app/Traits/ApiResponser.php",
+					"file": "app/Http/Controllers/Buyer/BuyerController.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 777,
+						"buffer_size": 1671,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								619,
-								619
+								411,
+								411
 							]
 						],
 						"settings":
 						{
-							"SL.14.region_keys":
-							[
-								"sublime_linter.protected_regions"
-							],
-							"SL.17.region_keys":
+							"SL.19.region_keys":
 							[
 								"sublime_linter.protected_regions"
 							],
 							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 12.0,
-						"translation.y": 560.0,
+						"translation.x": 0.0,
+						"translation.y": 130.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -839,34 +827,32 @@
 				},
 				{
 					"buffer": 1,
-					"file": "app/Http/Controllers/User/UserController.php",
+					"file": "app/Traits/ApiResponser.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2892,
+						"buffer_size": 776,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2685,
-								2685
+								385,
+								392
 							]
 						],
 						"settings":
 						{
-							"SL.16.region_keys":
+							"SL.23.region_keys":
 							[
-								"sublime_linter.protected_regions"
 							],
 							"auto_complete": false,
 							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2563.0,
+						"translation.y": 351.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -874,59 +860,25 @@
 				},
 				{
 					"buffer": 2,
-					"file": "app/User.php",
+					"file": "routes/api.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1085,
+						"buffer_size": 1280,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								811,
-								811
+								491,
+								491
 							]
 						],
 						"settings":
 						{
-							"SL.19.region_keys":
+							"SL.22.region_keys":
 							[
-							],
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 203.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "app/Http/Controllers/ApiController.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 164,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5,
-								5
-							]
-						],
-						"settings":
-						{
-							"SL.17.region_keys":
-							[
-								"sublime_linter.protected_regions"
 							],
 							"auto_complete": false,
 							"syntax": "Packages/PHP/PHP.sublime-syntax"
@@ -935,7 +887,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -943,7 +895,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 36.0
+		"height": 34.0
 	},
 	"input":
 	{
@@ -988,7 +940,7 @@
 	"project": "",
 	"replace":
 	{
-		"height": 68.0
+		"height": 64.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -997,6 +949,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"userc",
+				"restapi\\app\\Http\\Controllers\\User\\UserController.php"
+			],
 			[
 				"smtp.php",
 				"blog\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\SmtpTransport.php"
@@ -1042,7 +998,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 404.0,
+	"side_bar_width": 400.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
