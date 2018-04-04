@@ -17,7 +17,7 @@ Route::resource('buyers', 'Buyer\BuyerController', ['only' => [ 'index', 'show' 
 
 
 // ================= Seller ====================
-Route::resource('seller', 'Seller\SellerController', ['only' => [ 'index', 'show' ]] );
+Route::resource('sellers', 'Seller\SellerController', ['only' => [ 'index', 'show' ]] );
 
 
 // ================= Category ====================

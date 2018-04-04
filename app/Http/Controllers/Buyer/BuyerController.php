@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Buyer;
 
 use App\Buyer;
+use App\transactions;
 use Illuminate\Http\Request;
 use App\Traits\SuccessResponser;
 use App\Http\Controllers\ApiController;
@@ -16,7 +17,7 @@ class BuyerController extends ApiController
      */
     public function index()
     {
-        $buyers = Buyer::all();
+        $buyers = Buyer::has('transactions')->get();
         return $this->showAll($buyers, 200);
     }
 
@@ -47,9 +48,9 @@ class BuyerController extends ApiController
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Buyer $buyer)
     {
-        //
+        return $this->showOne($buyer, 200);
     }
 
     /**
