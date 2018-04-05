@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"cat",
+				"category"
+			],
+			[
+				"reque",
+				"$request〔variable〕"
+			],
+			[
+				"ca",
+				"category"
+			],
+			[
+				"requ",
+				"$request〔variable〕"
+			],
+			[
+				"cate",
+				"$category〔variable〕"
+			],
+			[
 				"stat",
 				"static〔keyword〕"
 			],
@@ -34,10 +54,6 @@
 			[
 				"u",
 				"update"
-			],
-			[
-				"requ",
-				"required"
 			],
 			[
 				"e",
@@ -348,10 +364,6 @@
 				"Request"
 			],
 			[
-				"cat",
-				"category_id"
-			],
-			[
 				"suc",
 				"successNotify"
 			],
@@ -448,16 +460,8 @@
 				"quantity"
 			],
 			[
-				"cate",
-				"category_id"
-			],
-			[
 				"i",
 				"id_country"
-			],
-			[
-				"ca",
-				"category_id"
 			],
 			[
 				"user",
@@ -510,29 +514,17 @@
 			[
 				"ac",
 				"action\tAttr"
-			],
-			[
-				"not",
-				"notifications"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "app/Http/Controllers/Seller/SellerController.php",
+			"file": "app/Http/Controllers/Category/CategoryController.php",
 			"settings":
 			{
-				"buffer_size": 1704,
+				"buffer_size": 2366,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/Http/Controllers/Buyer/BuyerController.php",
-			"settings":
-			{
-				"buffer_size": 1756,
 				"line_ending": "Unix"
 			}
 		},
@@ -540,33 +532,7 @@
 			"file": "app/Traits/ApiResponser.php",
 			"settings":
 			{
-				"buffer_size": 777,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "routes/api.php",
-			"settings":
-			{
-				"buffer_size": 1281,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/Seller.php",
-			"settings":
-			{
-				"buffer_size": 295,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/Scope/SellerScope.php",
-			"settings":
-			{
-				"buffer_size": 280,
+				"buffer_size": 776,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -618,15 +584,25 @@
 	[
 		"/G/Project/restapi",
 		"/G/Project/restapi/app",
+		"/G/Project/restapi/app/Http",
+		"/G/Project/restapi/app/Http/Controllers",
+		"/G/Project/restapi/app/Http/Controllers/Category",
+		"/G/Project/restapi/app/Http/Controllers/User",
+		"/G/Project/restapi/database",
+		"/G/Project/restapi/database/migrations",
 		"/G/Project/restapi/routes"
 	],
 	"file_history":
 	[
+		"/G/Project/restapi/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Concerns/HasAttributes.php",
 		"/G/Project/restapi/routes/api.php",
-		"/G/Project/restapi/app/Buyer.php",
 		"/G/Project/restapi/app/Http/Controllers/Buyer/BuyerController.php",
-		"/G/Project/restapi/app/Scope/BuyerScope.php",
+		"/G/Project/restapi/app/Scope/SellerScope.php",
+		"/G/Project/restapi/app/Seller.php",
 		"/G/Project/restapi/app/Traits/ApiResponser.php",
+		"/G/Project/restapi/app/Http/Controllers/Seller/SellerController.php",
+		"/G/Project/restapi/app/Buyer.php",
+		"/G/Project/restapi/app/Scope/BuyerScope.php",
 		"/G/Project/restapi/database/seeds/DatabaseSeeder.php",
 		"/G/Project/restapi/app/Http/Controllers/User/UserController.php",
 		"/G/Project/restapi/app/Exceptions/Handler.php",
@@ -661,7 +637,6 @@
 		"/G/Project/restapi/database/factories/UserFactory.php",
 		"/G/Project/restapi/app/Category.php",
 		"/G/Project/restapi/database/migrations/2018_03_22_130535_create_products_table.php",
-		"/G/Project/restapi/app/Seller.php",
 		"/G/Project/restapi/vendor/fzaninotto/faker/src/Faker/Provider/Base.php",
 		"/G/Project/restapi/database/migrations/2018_03_26_125349_category_product_table.php",
 		"/G/Project/restapi/database/migrations/2018_03_22_130850_create_transactions_table.php",
@@ -746,10 +721,7 @@
 		"/G/Project/examinee_two/app/Http/Requests/ExamRequest.php",
 		"/G/Project/blog/resources/views/layout/master.blade.php",
 		"/G/Project/Pencil_Corporation_laravel/resources/views/main/home.blade.php",
-		"/G/Project/Pencil_Corporation_laravel/app/Http/Controllers/Admin.php",
-		"/G/start.sh",
-		"/C/Program Files/Docker Toolbox/start.sh",
-		"/G/Project/blog/resources/views/tasks/index.blade.php"
+		"/G/Project/Pencil_Corporation_laravel/app/Http/Controllers/Admin.php"
 	],
 	"find":
 	{
@@ -811,27 +783,24 @@
 			[
 				{
 					"buffer": 0,
-					"file": "app/Http/Controllers/Seller/SellerController.php",
+					"file": "app/Http/Controllers/Category/CategoryController.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1704,
+						"buffer_size": 2366,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								277,
-								277
+								2355,
+								2355
 							]
 						],
 						"settings":
 						{
-							"SL.14.region_keys":
-							[
-							],
-							"SL.44.region_keys":
+							"SL.27.region_keys":
 							[
 								"sublime_linter.protected_regions"
 							],
@@ -841,7 +810,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2283.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -849,163 +818,36 @@
 				},
 				{
 					"buffer": 1,
-					"file": "app/Http/Controllers/Buyer/BuyerController.php",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 1756,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"SL.48.region_keys":
-							[
-							],
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "app/Traits/ApiResponser.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 777,
+						"buffer_size": 776,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								112,
-								124
+								654,
+								669
 							]
 						],
 						"settings":
 						{
-							"SL.47.region_keys":
+							"SL.34.region_keys":
 							[
+								"sublime_linter.protected_regions"
 							],
+							"auto_complete": false,
 							"syntax": "Packages/PHP/PHP.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 296.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "routes/api.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1281,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								629,
-								629
-							]
-						],
-						"settings":
-						{
-							"SL.46.region_keys":
-							[
-							],
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "app/Seller.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 295,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								21,
-								21
-							]
-						],
-						"settings":
-						{
-							"SL.28.region_keys":
-							[
-							],
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "app/Scope/SellerScope.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 280,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								243,
-								243
-							]
-						],
-						"settings":
-						{
-							"SL.27.region_keys":
-							[
-							],
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
