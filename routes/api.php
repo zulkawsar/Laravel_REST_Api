@@ -25,7 +25,7 @@ Route::resource('categories', 'Category\CategoryController', ['except' => [ 'cre
 
 
 // ================= Transaction ====================
-Route::resource('transaction', 'Transaction\TransactionController', ['only' => [ 'index', 'show' ]] );
+Route::resource('transactions', 'Transaction\TransactionController', ['only' => [ 'index', 'show' ]] );
 
 
 // ================= Product ====================
