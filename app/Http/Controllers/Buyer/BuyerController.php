@@ -5,7 +5,6 @@ namespace App\Http\Controllers\Buyer;
 use App\Buyer;
 use App\transactions;
 use Illuminate\Http\Request;
-use App\Traits\SuccessResponser;
 use App\Http\Controllers\ApiController;
 
 class BuyerController extends ApiController

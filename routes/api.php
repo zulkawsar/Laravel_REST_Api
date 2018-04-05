@@ -21,7 +21,7 @@ Route::resource('sellers', 'Seller\SellerController', ['only' => [ 'index', 'sho
 
 
 // ================= Category ====================
-Route::resource('category', 'Category\CategoryController', ['except' => [ 'create', 'edit' ]] );
+Route::resource('categories', 'Category\CategoryController', ['except' => [ 'create', 'edit' ]] );
 
 
 // ================= Transaction ====================

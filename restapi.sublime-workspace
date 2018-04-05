@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"stat",
+				"static〔keyword〕"
+			],
+			[
 				"class_",
 				"class_basename〔function〕"
 			],
@@ -510,32 +514,33 @@
 			[
 				"not",
 				"notifications"
-			],
-			[
-				"base_",
-				"base_url"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "app/Http/Controllers/Buyer/BuyerController.php",
+			"file": "app/Http/Controllers/Seller/SellerController.php",
 			"settings":
 			{
-				"buffer_size": 1671,
+				"buffer_size": 1704,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "<?php \nnamespace App\\Traits;\n\nuse Illuminate\\Support\\Collection;\nuse Illuminate\\Database\\Eloquent\\Model;\n\ntrait ApiResponser\n{\n\tprivate function SuccessResponser( $data, $code )\n\t{\n\t\treturn response()->json( $data, $code );\n\t}\n\n\tprotected function errorResponser( $message, $code )\n\t{\n\t\treturn response()->json([ 'error' => $message, 'code' => $code ], $code);\n\t}\n\n\tprotected function showAll( Collection $collection, $code = 200 )\n\t{\n\t\treturn $this->SuccessResponser([ 'data' => $collection ], $code);\n\t}\n\n\tprotected function showOne( Model $model, $code = 200 )\n\t{\n\t\treturn $this->SuccessResponser([ 'data' => $model ], $code);\n\t}\n\n\tprotected function successMessages( $message, $code  )\n\t{\n\t\treturn response()->json([ 'success' => $message, 'code' => $code ], $code);\n\t}\n\n}",
-			"file": "app/Traits/ApiResponser.php",
-			"file_size": 810,
-			"file_write_time": 131669925154532989,
+			"file": "app/Http/Controllers/Buyer/BuyerController.php",
 			"settings":
 			{
-				"buffer_size": 776,
+				"buffer_size": 1756,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Traits/ApiResponser.php",
+			"settings":
+			{
+				"buffer_size": 777,
 				"line_ending": "Windows"
 			}
 		},
@@ -543,9 +548,27 @@
 			"file": "routes/api.php",
 			"settings":
 			{
-				"buffer_size": 1280,
+				"buffer_size": 1281,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Seller.php",
+			"settings":
+			{
+				"buffer_size": 295,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Scope/SellerScope.php",
+			"settings":
+			{
+				"buffer_size": 280,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -595,15 +618,16 @@
 	[
 		"/G/Project/restapi",
 		"/G/Project/restapi/app",
-		"/G/Project/restapi/app/Http",
-		"/G/Project/restapi/app/Http/Controllers",
-		"/G/Project/restapi/app/Http/Controllers/Buyer",
-		"/G/Project/restapi/app/Traits",
 		"/G/Project/restapi/routes"
 	],
 	"file_history":
 	[
+		"/G/Project/restapi/routes/api.php",
+		"/G/Project/restapi/app/Buyer.php",
+		"/G/Project/restapi/app/Http/Controllers/Buyer/BuyerController.php",
+		"/G/Project/restapi/app/Scope/BuyerScope.php",
 		"/G/Project/restapi/app/Traits/ApiResponser.php",
+		"/G/Project/restapi/database/seeds/DatabaseSeeder.php",
 		"/G/Project/restapi/app/Http/Controllers/User/UserController.php",
 		"/G/Project/restapi/app/Exceptions/Handler.php",
 		"/G/Project/examinee/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php",
@@ -635,8 +659,6 @@
 		"/G/Project/blog/app/User.php",
 		"/G/Project/blog/app/Post.php",
 		"/G/Project/restapi/database/factories/UserFactory.php",
-		"/G/Project/restapi/database/seeds/DatabaseSeeder.php",
-		"/G/Project/restapi/routes/api.php",
 		"/G/Project/restapi/app/Category.php",
 		"/G/Project/restapi/database/migrations/2018_03_22_130535_create_products_table.php",
 		"/G/Project/restapi/app/Seller.php",
@@ -645,7 +667,6 @@
 		"/G/Project/restapi/database/migrations/2018_03_22_130850_create_transactions_table.php",
 		"/G/Project/restapi/database/migrations/2018_03_22_130152_create_categories_table.php",
 		"/G/Project/restapi/database/migrations/2014_10_12_000000_create_users_table.php",
-		"/G/Project/restapi/app/Buyer.php",
 		"/G/Project/restapi/app/Transaction.php",
 		"/G/Project/restapi/app/Product.php",
 		"/C/Users/mdzul/AppData/Roaming/Sublime Text 3/Packages/User/PHP Companion.sublime-settings",
@@ -728,9 +749,7 @@
 		"/G/Project/Pencil_Corporation_laravel/app/Http/Controllers/Admin.php",
 		"/G/start.sh",
 		"/C/Program Files/Docker Toolbox/start.sh",
-		"/G/Project/blog/resources/views/tasks/index.blade.php",
-		"/G/Project/blog/resources/views/welcome.blade.php",
-		"/F/League of Legends/lockfile"
+		"/G/Project/blog/resources/views/tasks/index.blade.php"
 	],
 	"find":
 	{
@@ -792,24 +811,27 @@
 			[
 				{
 					"buffer": 0,
-					"file": "app/Http/Controllers/Buyer/BuyerController.php",
+					"file": "app/Http/Controllers/Seller/SellerController.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1671,
+						"buffer_size": 1704,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								411,
-								411
+								277,
+								277
 							]
 						],
 						"settings":
 						{
-							"SL.19.region_keys":
+							"SL.14.region_keys":
+							[
+							],
+							"SL.44.region_keys":
 							[
 								"sublime_linter.protected_regions"
 							],
@@ -819,7 +841,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 130.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -827,32 +849,32 @@
 				},
 				{
 					"buffer": 1,
-					"file": "app/Traits/ApiResponser.php",
-					"semi_transient": false,
+					"file": "app/Http/Controllers/Buyer/BuyerController.php",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 776,
+						"buffer_size": 1756,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								385,
-								392
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"SL.23.region_keys":
+							"SL.48.region_keys":
 							[
 							],
-							"auto_complete": false,
 							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 351.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -860,24 +882,56 @@
 				},
 				{
 					"buffer": 2,
-					"file": "routes/api.php",
+					"file": "app/Traits/ApiResponser.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1280,
+						"buffer_size": 777,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								491,
-								491
+								112,
+								124
 							]
 						],
 						"settings":
 						{
-							"SL.22.region_keys":
+							"SL.47.region_keys":
+							[
+							],
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "routes/api.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1281,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								629,
+								629
+							]
+						],
+						"settings":
+						{
+							"SL.46.region_keys":
 							[
 							],
 							"auto_complete": false,
@@ -887,7 +941,71 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/Seller.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 295,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								21,
+								21
+							]
+						],
+						"settings":
+						{
+							"SL.28.region_keys":
+							[
+							],
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/Scope/SellerScope.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 280,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								243,
+								243
+							]
+						],
+						"settings":
+						{
+							"SL.27.region_keys":
+							[
+							],
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
 					"type": "text"
 				}
 			]
