@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"bu",
+				"buyerProduct"
+			],
+			[
+				"show",
+				"showAll〔function〕"
+			],
+			[
+				"buyer",
+				"$buyerTransaction〔variable〕"
+			],
+			[
 				"tr",
 				"$transaction〔variable〕"
 			],
@@ -74,10 +86,6 @@
 			[
 				"sh",
 				"showOne"
-			],
-			[
-				"show",
-				"showOne〔function〕"
 			],
 			[
 				"js",
@@ -506,42 +514,25 @@
 			[
 				"getsalary",
 				"getsalaryType"
-			],
-			[
-				"rol",
-				"Role"
-			],
-			[
-				"role",
-				"roleModel"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "app/Http/Controllers/Product/ProductController.php",
-			"settings":
-			{
-				"buffer_size": 1783,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/Http/Controllers/Transaction/TransactionController.php",
-			"settings":
-			{
-				"buffer_size": 1724,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "routes/api.php",
 			"settings":
 			{
-				"buffer_size": 1285,
+				"buffer_size": 1769,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Http/Controllers/Buyer/BuyerProductController.php",
+			"settings":
+			{
+				"buffer_size": 1818,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -592,11 +583,21 @@
 	"expanded_folders":
 	[
 		"/G/Project/restapi",
+		"/G/Project/restapi/app",
+		"/G/Project/restapi/app/Http",
+		"/G/Project/restapi/app/Http/Controllers",
+		"/G/Project/restapi/app/Http/Controllers/Buyer",
 		"/G/Project/restapi/routes"
 	],
 	"file_history":
 	[
+		"/G/Project/restapi/app/Transaction.php",
+		"/G/Project/restapi/app/Http/Controllers/Buyer/BuyerTransactionController.php",
+		"/G/Project/restapi/app/Http/Controllers/Transaction/TransactionSellerController.php",
+		"/G/Project/restapi/app/Http/Controllers/Transaction/TransactionCategoryController.php",
+		"/G/Project/restapi/app/Http/Controllers/Product/ProductController.php",
 		"/G/Project/restapi/routes/api.php",
+		"/G/Project/restapi/app/Http/Controllers/Transaction/TransactionController.php",
 		"/G/Project/restapi/app/Traits/ApiResponser.php",
 		"/G/Project/restapi/app/Http/Controllers/Category/CategoryController.php",
 		"/G/Project/restapi/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Concerns/HasAttributes.php",
@@ -645,7 +646,6 @@
 		"/G/Project/restapi/database/migrations/2018_03_22_130850_create_transactions_table.php",
 		"/G/Project/restapi/database/migrations/2018_03_22_130152_create_categories_table.php",
 		"/G/Project/restapi/database/migrations/2014_10_12_000000_create_users_table.php",
-		"/G/Project/restapi/app/Transaction.php",
 		"/G/Project/restapi/app/Product.php",
 		"/C/Users/mdzul/AppData/Roaming/Sublime Text 3/Packages/User/PHP Companion.sublime-settings",
 		"/C/Users/mdzul/AppData/Roaming/Sublime Text 3/Packages/PHP Companion/PHP Companion.sublime-settings",
@@ -718,12 +718,7 @@
 		"/G/Project/blog/resources/views/posts/create.blade.php",
 		"/G/Project/blog/app/Http/Requests/PostRequest.php",
 		"/G/Project/blog/vendor/laravel/framework/src/Illuminate/Contracts/Support/MessageBag.php",
-		"/G/Project/blog/vendor/laravel/framework/src/Illuminate/Support/MessageBag.php",
-		"/G/Project/blog/vendor/laravel/framework/src/Illuminate/Database/Concerns/BuildsQueries.php",
-		"/G/Project/examinee_two/resources/views/exam/create.blade.php",
-		"/G/Project/examinee_two/app/Http/Requests/ExamRequest.php",
-		"/G/Project/blog/resources/views/layout/master.blade.php",
-		"/G/Project/Pencil_Corporation_laravel/resources/views/main/home.blade.php"
+		"/G/Project/blog/vendor/laravel/framework/src/Illuminate/Support/MessageBag.php"
 	],
 	"find":
 	{
@@ -785,104 +780,69 @@
 			[
 				{
 					"buffer": 0,
-					"file": "app/Http/Controllers/Product/ProductController.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1783,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1037,
-								1037
-							]
-						],
-						"settings":
-						{
-							"SL.27.region_keys":
-							[
-								"sublime_linter.protected_regions"
-							],
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1053.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/Http/Controllers/Transaction/TransactionController.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1724,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1059,
-								1059
-							]
-						],
-						"settings":
-						{
-							"SL.28.region_keys":
-							[
-								"sublime_linter.protected_regions"
-							],
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1001.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "routes/api.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1285,
+						"buffer_size": 1769,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								919,
-								931
+								687,
+								687
 							]
 						],
 						"settings":
 						{
-							"SL.29.region_keys":
+							"SL.34.region_keys":
 							[
 							],
 							"auto_complete": false,
 							"syntax": "Packages/PHP/PHP.sublime-syntax"
 						},
-						"translation.x": 0.0,
+						"translation.x": 114.0,
 						"translation.y": 260.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/Http/Controllers/Buyer/BuyerProductController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1818,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								449,
+								449
+							]
+						],
+						"settings":
+						{
+							"SL.43.region_keys":
+							[
+								"sublime_linter.protected_regions"
+							],
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
