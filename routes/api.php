@@ -22,6 +22,10 @@ Route::resource('buyers.sellers', 'Buyer\BuyerSellerController', ['only' => [ 'i
 
 // ================= Seller ====================
 Route::resource('sellers', 'Seller\SellerController', ['only' => [ 'index', 'show' ]] );
+Route::resource('sellers.products', 'Seller\SellerProductController', ['only' => [ 'index' ]] );
+Route::resource('sellers.categories', 'Seller\SellerCategoryController', ['only' => [ 'index' ]] );
+Route::resource('sellers.transactions', 'Seller\SellerTransactionController', ['only' => [ 'index' ]] );
+Route::resource('sellers.buyers', 'Seller\SellerBuyerController', ['only' => [ 'index' ]] );
 
 
 // ================= Category ====================
