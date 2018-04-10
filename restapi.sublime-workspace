@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"pro",
+				"$product〔variable〕"
+			],
+			[
+				"p",
+				"$product〔variable〕"
+			],
+			[
+				"sh",
+				"showOne〔function〕"
+			],
+			[
 				"se",
 				"$sellerBuyer〔variable〕"
 			],
@@ -100,20 +112,12 @@
 				"User"
 			],
 			[
-				"sh",
-				"showOne"
-			],
-			[
 				"js",
 				"json"
 			],
 			[
 				"code",
 				"code"
-			],
-			[
-				"p",
-				"protected"
 			],
 			[
 				"fun",
@@ -400,10 +404,6 @@
 				"successNotify"
 			],
 			[
-				"pro",
-				"product_add"
-			],
-			[
 				"countr",
 				"country_id"
 			],
@@ -520,28 +520,28 @@
 	"buffers":
 	[
 		{
+			"file": "app/Http/Controllers/Seller/SellerProductController.php",
+			"settings":
+			{
+				"buffer_size": 3469,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "routes/api.php",
 			"settings":
 			{
-				"buffer_size": 2769,
+				"buffer_size": 2778,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/Http/Controllers/Seller/SellerBuyerController.php",
+			"file": "app/Product.php",
 			"settings":
 			{
-				"buffer_size": 1984,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "database/migrations/2018_03_22_130535_create_products_table.php",
-			"settings":
-			{
-				"buffer_size": 987,
+				"buffer_size": 804,
 				"line_ending": "Unix"
 			}
 		}
@@ -590,13 +590,18 @@
 	},
 	"expanded_folders":
 	[
-		"/G/Project/restapi",
-		"/G/Project/restapi/database",
-		"/G/Project/restapi/database/migrations"
+		"/G/Project/examinee",
+		"/G/Project/examinee/app",
+		"/G/Project/examinee/app/Http",
+		"/G/Project/examinee/app/Http/Controllers",
+		"/G/Project/examinee/app/Repositories"
 	],
 	"file_history":
 	[
+		"/G/Project/examinee/app/Transformers/RoleTransformer.php",
 		"/G/Project/restapi/app/Http/Controllers/Controller.php",
+		"/G/Project/restapi/routes/api.php",
+		"/G/Project/restapi/app/Http/Controllers/Seller/SellerBuyerController.php",
 		"/G/Project/blog/app/Http/Controllers/Controller.php",
 		"/G/Project/restapi/app/Http/Controllers/Seller/SellerTransactionController.php",
 		"/G/Project/restapi/app/Http/Controllers/Seller/SellerCategoryController.php",
@@ -610,7 +615,6 @@
 		"/G/Project/restapi/app/Http/Controllers/Buyer/BuyerCategoryController.php",
 		"/G/Project/restapi/app/Http/Controllers/Buyer/BuyerSellerController.php",
 		"/G/Project/restapi/app/Http/Controllers/Buyer/BuyerProductController.php",
-		"/G/Project/restapi/routes/api.php",
 		"/G/Project/restapi/app/Transaction.php",
 		"/G/Project/restapi/app/Http/Controllers/Buyer/BuyerTransactionController.php",
 		"/G/Project/restapi/app/Http/Controllers/Transaction/TransactionSellerController.php",
@@ -647,7 +651,6 @@
 		"/G/Project/restapi/vendor/laravel/framework/src/Illuminate/Contracts/Debug/ExceptionHandler.php",
 		"/G/Project/restapi/app/Http/Controllers/ApiController.php",
 		"/G/Project/restapi/app/User.php",
-		"/G/Project/examinee/app/Transformers/RoleTransformer.php",
 		"/G/Project/restapi/vendor/phar-io/version/src/PreReleaseSuffix.php",
 		"/G/Project/restapi/.env",
 		"/G/Project/examinee/app/Repositories/BaseRepository.php",
@@ -722,8 +725,7 @@
 		"/G/Project/blog/app/Model.php",
 		"/G/Project/blog/public/css/app.css",
 		"/G/Project/Pencil_Corporation_laravel/resources/views/main/employeeList.blade.php",
-		"/G/Project/blog/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Concerns/HasRelationships.php",
-		"/G/Project/blog/resources/views/layouts/master.blade.php"
+		"/G/Project/blog/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Concerns/HasRelationships.php"
 	],
 	"find":
 	{
@@ -775,73 +777,37 @@
 		},
 		{
 			"path": "G:\\Project\\blog"
+		},
+		{
+			"path": "G:\\Project\\examinee"
 		}
 	],
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "routes/api.php",
+					"file": "app/Http/Controllers/Seller/SellerProductController.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2769,
+						"buffer_size": 3469,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1430,
-								1430
+								2452,
+								2452
 							]
 						],
 						"settings":
 						{
-							"SL.16.region_keys":
-							[
-								"sublime_linter.protected_regions"
-							],
-							"SL.24.region_keys":
-							[
-							],
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 468.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/Http/Controllers/Seller/SellerBuyerController.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1984,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								597,
-								597
-							]
-						],
-						"settings":
-						{
-							"SL.15.region_keys":
-							[
-							],
-							"SL.58.region_keys":
+							"SL.23.region_keys":
 							[
 								"sublime_linter.protected_regions"
 							],
@@ -851,7 +817,39 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 21.0,
+						"translation.y": 2246.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "routes/api.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2778,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1173,
+								1173
+							]
+						],
+						"settings":
+						{
+							"SL.26.region_keys":
+							[
+							],
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 13.0,
+						"translation.y": 429.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -859,35 +857,35 @@
 				},
 				{
 					"buffer": 2,
-					"file": "database/migrations/2018_03_22_130535_create_products_table.php",
-					"semi_transient": true,
+					"file": "app/Product.php",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 987,
+						"buffer_size": 804,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								438,
+								438
 							]
 						],
 						"settings":
 						{
-							"SL.17.region_keys":
+							"SL.25.region_keys":
 							[
 							],
 							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
+							"tab_size": 3,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 702.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -998,7 +996,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 426.0,
+	"side_bar_width": 350.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
